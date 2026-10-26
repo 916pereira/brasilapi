@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário de Feriados</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Calendário de Feriados</h1>
+        <p>Consulte os feriados nacionais de qualquer ano.</p>
+
+        <div class="consulta">
+            <label for="ano">Digite o ano:</label>
+            <input type="number" id="ano" min="1" max="9999">
+            <button id="consultar">Consultar</button>
+        </div>
+
+        <div id="mensagem" role="status"></div>
+
+        <section id="proximo-feriado" class="destaque" hidden></section>
+
+        <h2 id="total">Total de feriados: 0</h2>
+
+        <div class="tabela-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Dia da semana</th>
+                        <th>Feriado</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-feriados"></tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
